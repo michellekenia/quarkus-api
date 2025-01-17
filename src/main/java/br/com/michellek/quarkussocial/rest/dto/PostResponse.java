@@ -1,6 +1,7 @@
 package br.com.michellek.quarkussocial.rest.dto;
 
 import br.com.michellek.quarkussocial.rest.domain.model.Post;
+import jakarta.ws.rs.core.Response;
 import lombok.Data;
 
 import java.time.LocalDateTime;
@@ -13,6 +14,11 @@ public class PostResponse {
 
 
     public static PostResponse fromEntity(Post post){
+
+        var response = new PostResponse();
+        response.setText(post.getText());
+        response.setDateTime(post.getDateTime());
+        return response;
 
     }
 }
