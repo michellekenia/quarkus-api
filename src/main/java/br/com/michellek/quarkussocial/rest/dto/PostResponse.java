@@ -1,7 +1,6 @@
 package br.com.michellek.quarkussocial.rest.dto;
 
 import br.com.michellek.quarkussocial.rest.domain.model.Post;
-import jakarta.ws.rs.core.Response;
 import lombok.Data;
 
 import java.time.LocalDateTime;
